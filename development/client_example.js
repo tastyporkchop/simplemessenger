@@ -11,4 +11,4 @@ var service = message_service.createService();
 service.start();
 service.addFriend({host: 'node1', port: 8124});
 service.sendMessage("I like you");
-//service.shutdown();
+service.shutdown();
