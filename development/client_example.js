@@ -7,8 +7,7 @@ var config = {
 };
 var service = message_service.createService();
 
-//console.log(serv);
 service.start();
 service.addFriend({host: 'node1', port: 8124});
-service.sendMessage("I like you");
+service.sendMessage("I like you a whole lot - ");
 service.shutdown();
