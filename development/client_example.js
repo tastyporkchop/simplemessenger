@@ -10,37 +10,9 @@ service.start();
 service.addFriend({host: 'node1', port: 8124});
 
 // send some data
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
-service.sendMessage("I like you a whole lot - ");
+for(var i=0; i<30; i++) {
+    service.sendMessage("I like you a whole lot "+i);
+}
 
 // shutdown
 service.shutdown();
